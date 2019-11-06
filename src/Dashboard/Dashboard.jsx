@@ -54,7 +54,7 @@ class Dashboard extends Component {
         } if (this.state.balance < amount) {
             this.notifyB();
             return;
-        } if (amount < 0) {
+        } if (amount <= 0) {
             this.notifyD();
             return;
         } if (this.state.balance >= amount) {
